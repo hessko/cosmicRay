@@ -1,5 +1,5 @@
 void runDataReader(){
-	gROOT->ProcessLine(".L dataReader.c");
+	gROOT->ProcessLine(".L dataReader.c+");
 	dataReader();
 
 }
