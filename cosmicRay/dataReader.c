@@ -46,7 +46,7 @@ void dataReader() {
 	Int_t nElems = 4;
 	//Long64_t testArr[200];
 	//outputTree->Branch("testArr", testArr,"testArr[nElems]/L");
-	ifstream dataFile("/home/hessko/cosmicRay/rec_capture_20150701_170501.txt");
+	ifstream dataFile("/home/hessko/cosmicRay/rec_capture_20150716_142724.txt");
 	int lineCounter = 0;
 	long int channel = 0;
 	long int eventNum = 0;
@@ -78,7 +78,7 @@ void dataReader() {
 #ifdef DEBUG
 				cout << "New Spill Number is " << *spillNum << endl;
 #endif			
-				*newFileName = "/home/hessko/cosmicRay/Spill_" + *spillNum + ".root";
+				*newFileName = "/home/hessko/cosmicRay/rec_cap_20150716_trees/Spill_" + *spillNum + ".root";
 #ifdef DEBUG
 				cout << "New File Name will be " << *newFileName << endl;
 #endif
